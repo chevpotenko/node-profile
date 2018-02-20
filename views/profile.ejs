@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>    
+</head>
+<body>
+    <% include partials/nav.ejs %>
+    <p><b><%= person %></b> Welcom to our site</p>
+    <h2>Hobbies</h2>
+    <ul>
+        <% hobbies.forEach(function(item) { %>
+            <li><%= item  %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
