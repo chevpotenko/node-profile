@@ -1,8 +1,8 @@
 let express = require ('express');
-let app = express('view engine', 'ejs');
+let app = express();
 let todoController = require('./controllers/todoController');
 
-app.set('/assets', express);
+app.set('view engine', 'ejs');
 app.use(express.static('./public'));
 
 todoController(app);
